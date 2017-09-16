@@ -1,0 +1,193 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+<filter>
+    <filter-name>AppFilter</filter-name>
+    <filter-class>
+        CTTS.AppFilter
+    </filter-class>
+    <!-- UNUSED...
+	  <init-param>
+        <param-name>test-param</param-name>
+        <param-value>This parameter is for testing.</param-value>
+    </init-param>
+    -->
+</filter>
+<filter-mapping>
+    <filter-name>AppFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping>
+
+<servlet>
+        <servlet-name>Control</servlet-name>
+        <servlet-class>CTTS.Control</servlet-class>
+</servlet>
+
+<servlet-mapping>
+        <servlet-name>Control</servlet-name>
+        <url-pattern>/Control</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>CTTS.Login</servlet-class>
+</servlet>
+
+<servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>CTTS.Logout</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>MainPage</servlet-name>
+        <servlet-class>CTTS.MainPage</servlet-class>
+</servlet>
+
+<servlet-mapping>
+        <servlet-name>MainPage</servlet-name>
+        <url-pattern>/MainPage</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>CreateServiceRequest</servlet-name>
+        <servlet-class>CTTS.CreateServiceRequest</servlet-class>
+</servlet>
+
+<servlet-mapping>
+        <servlet-name>CreateServiceRequest</servlet-name>
+        <url-pattern>/CreateServiceRequest</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>ViewNewServiceRequests</servlet-name>
+        <servlet-class>CTTS.ViewNewServiceRequests</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>ViewNewServiceRequests</servlet-name>
+        <url-pattern>/ViewNewServiceRequests</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>ViewMyServiceRequests</servlet-name>
+        <servlet-class>CTTS.ViewMyServiceRequests</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>ViewMyServiceRequests</servlet-name>
+        <url-pattern>/ViewMyServiceRequests</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+        <servlet-name>AdoptServiceRequest</servlet-name>
+        <servlet-class>CTTS.AdoptServiceRequest</servlet-class>
+</servlet>
+
+<servlet-mapping>
+        <servlet-name>AdoptServiceRequest</servlet-name>
+        <url-pattern>/AdoptServiceRequest</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>CancelServiceRequest</servlet-name>
+        <servlet-class>CTTS.CancelServiceRequest</servlet-class>
+</servlet>
+
+<servlet-mapping>
+        <servlet-name>CancelServiceRequest</servlet-name>
+        <url-pattern>/CancelServiceRequest</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>ViewServiceRequestDetails</servlet-name>
+        <servlet-class>CTTS.ViewServiceRequestDetails</servlet-class>
+</servlet>
+
+<servlet-mapping>
+        <servlet-name>ViewServiceRequestDetails</servlet-name>
+        <url-pattern>/ViewServiceRequestDetails</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>NIY</servlet-name>
+        <servlet-class>CTTS.NIY</servlet-class>
+</servlet>
+
+<servlet-mapping>
+        <servlet-name>NIY</servlet-name>
+        <url-pattern>/NIY</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+        <servlet-name>EscalatedServiceRequest</servlet-name>
+        <servlet-class>CTTS.EscalatedServiceRequest</servlet-class>
+</servlet>
+
+<servlet-mapping>
+        <servlet-name>EscalatedServiceRequest</servlet-name>
+        <url-pattern>/EscalatedServiceRequest</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>ViewEscalatedServiceRequestDetails</servlet-name>
+        <servlet-class>CTTS.ViewEscalatedServiceRequestDetails</servlet-class>
+</servlet>
+
+<servlet-mapping>
+        <servlet-name>ViewEscalatedServiceRequestDetails</servlet-name>
+        <url-pattern>/ViewEscalatedServiceRequestDetails</url-pattern>
+</servlet-mapping>	
+
+<servlet>
+        <servlet-name>AddEmployee</servlet-name>
+        <servlet-class>CTTS.AddEmployee</servlet-class>
+</servlet>
+
+<servlet-mapping>
+        <servlet-name>AddEmployee</servlet-name>
+        <url-pattern>/AddEmployee</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>CreateServiceWork</servlet-name>
+    <servlet-class>CTTS.CreateServiceWork</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateServiceWork</servlet-name>
+    <url-pattern>/CreateServiceWork</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+        <servlet-name>ViewUnresolvedServiceRequests</servlet-name>
+        <servlet-class>CTTS.ViewUnresolvedServiceRequests</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>ViewUnresolvedServiceRequests</servlet-name>
+        <url-pattern>/ViewUnresolvedServiceRequests</url-pattern>
+</servlet-mapping>    
+
+<!-- Testing purposes  
+
+<servlet>
+        <servlet-name>testInput</servlet-name>
+        <servlet-class>CTTS.testInput</servlet-class>
+</servlet>
+
+<servlet-mapping>
+        <servlet-name>testInput</servlet-name>
+        <url-pattern>/testInput</url-pattern>
+</servlet-mapping> -->
+</web-app>
+
